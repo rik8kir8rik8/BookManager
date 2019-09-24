@@ -1,0 +1,127 @@
+html, body {
+    height: 100%;
+    box-sizing:border-box;
+    margin: 0;
+  }
+
+.validation-summary-errors {
+    color: #d32f2f;
+    font-size : small;
+}
+.field-validation-error {
+    color: #d32f2f;
+    font-size : small;
+}
+  
+
+.over{
+    margin: 0%;
+    height: 100%;
+}
+.backDiv{
+    display: table;
+    width: 100%;
+    background: linear-gradient(1deg, #47d0f0, #e9adff, #f2ffad);
+    background-size: 600% 600%;
+    animation: AnimationName 10s ease infinite;
+    color: white;
+    height: 100%;
+}
+.backDivLarge{
+    display:table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.backDivSmall{
+    color: white;
+    margin: 0;
+    background-color: #6CD1EA;
+}
+.layout{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.layoutIn{
+    display:table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.buttonWrapper{
+    margin-left: 50px;
+    background-color: #6CD1EA;
+}
+
+input[type="submit"]{
+    color: white;
+}
+
+  .title{
+    position: relative;
+    top: 100%;
+  }
+
+  h1{
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  h4{
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  h5{
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .loginbox {
+    box-shadow: 0 2px 30px rgba(black, .2);
+    background: lighten(#f0f4c3, 10%);
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .wave {
+    opacity: .4;
+    position: absolute;
+    top:45%;
+    left: -25%;
+    background: #0af;
+    width: 150%;
+    height: 150%;
+
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 7s infinite linear;
+  }
+  
+  .wave.-three {
+    animation: drift 8s infinite linear;
+  }
+  
+  .wave.-two {
+    animation: drift 9s infinite linear;
+    opacity: .1;
+    background: yellow;
+  }
+
+.loginbox:after {
+    content: '';
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+}
+  
+  @keyframes drift {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
+  }
+
+  @keyframes AnimationName { 
+    0%{background-position:1% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:1% 0%}
+}
